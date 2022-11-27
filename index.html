@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>영화 리뷰</title>
+        <style>
+            @font-face {
+                font-family: 'PuradakGentleGothicR';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+            *{
+                list-style: none;
+                text-decoration: none;
+                font-family: 'PuradakGentleGothicR';
+                padding: 0;
+                margin: 0;
+            }
+            #sec01{
+                width: 100%; 
+                height: 1100px;
+                background: url(img/bg_img01.jpg); linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); ;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #sec02{
+                width: 100%; 
+                height: 1100px;
+                background-color: gray;
+            }
+
+            #sec03{
+                width: 100%; 
+                height: 1100px;
+                background-color: green;
+            }
+
+            #sec04{
+                width: 100%; 
+                height: 1100px;
+                background-color: pink;
+            }
+
+            .header_bar{
+                width: 100%;
+                height: 100px;
+                background-color: rgba(255, 255, 255, 0);
+                position: fixed;
+                border-bottom: #fff solid 2px;
+                box-shadow: #fff 3px 3px 3px;
+            }
+            .header{
+                width: 1280px;
+                height: 100px;
+                margin: auto;
+                display: flex;
+            }
+            .logo_area{
+                width: 300px; 
+                height: 100px; 
+            }
+            #logo{
+                font-size: 50px;
+                line-height: 100px;
+                color: #fff;
+            }
+            .nav{
+                display: flex;
+                line-height: 100px;
+                justify-content: flex-end;
+                width:calc(1280px - 300px);
+            }
+            .nav > li{
+                margin-left: 80px;
+                font-size: 20px;
+                color: #fff;
+            }
+
+            .nav > li > a{
+                color: #fff;
+            }
+
+            .nav > li > a:hover{
+                color: yellow;
+            
+            }
+            .middle{
+                padding-top: 150px;
+                font-size : 50px;
+                text-align: center;
+                color : white;
+            }
+            .end{
+                color: skyblue;
+                font-weight: normal;
+            }
+            footer{
+                width: 100%;
+                height: 100%;
+                background-color: navy;
+                
+            }
+            footer > div{
+                color: white;
+                font-weight: 100;
+                padding-top: 15px;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="warp">
+            <section id="sec01">
+                    <div class="header_bar">
+                        <div class="header">
+                            <div class="logo_area">
+                                <a href="#sec01"><div id="logo">탑건: 매버릭</div></a>
+                            </div>
+                            <ul class="nav">
+                                <li class="menu_li"><a href="#sec02">등장인물</a></li>
+                                <li class="menu_li"><a href="#sec03">줄 거 리</a></li>
+                                <li class="menu_li"><a href="#sec04">감 상 평</a></li>
+                            </ul>   
+                        </div>
+                    </div>
+                <div class="middle">Don't Think. <br/><b class="end">Just Do it!</b></div>
+            </section>
+            <section id="sec02">
+                <div>등장인물</div>
+            </section>
+            <section id="sec03">
+                <div>줄 거 리</div>
+            </section>
+            <section id="sec04">
+                <div>감 상 평</div>
+            </section>
+            <footer>
+                <div>Copyright 2022. 신현범. All Rights Reserved.</div>
+            </footer>
+        </div>
+    </body>
+
+
+</html>
